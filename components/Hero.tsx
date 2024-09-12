@@ -2,8 +2,8 @@ import Image from "next/image";
 import Button from "./Button";
 
 const Hero = () => {
-  const handleClick = () => {
-    console.log("Button: Explore button clicked");
+  const handleScroll = () => {
+    console.log("Button: Explore button clicked for scrolling");
   };
   return (
     <div className="hero">
@@ -18,7 +18,7 @@ const Hero = () => {
         <Button
           title="Explore Cars"
           containerStyle="bg-primary-blue text-white rounded-full mt-10"
-          handleClick={handleClick}
+          handleClick={handleScroll}
         />
       </div>
       <div className="hero__image-container">
